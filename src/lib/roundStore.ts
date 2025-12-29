@@ -4,7 +4,7 @@ import { detectPoolType } from "@/lib/detectPoolType";
 import { getCurrentBlockNumber, scanSwaps, maskWallet } from "@/lib/onchain";
 import type { LogItem, RoundId, RoundState, SwapItem, WinnerRecord } from "@/lib/types";
 
-const MAIN_DURATION = 6000;
+const MAIN_DURATION = 600;
 const HOURLY_DURATION = 60 * 60;
 
 function nowMs() {
@@ -231,4 +231,5 @@ export function getSnapshot() {
     swaps: store.swaps,
   };
 }
+
 
